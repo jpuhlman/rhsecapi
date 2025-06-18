@@ -180,7 +180,7 @@ class ApiClient:
 
     def __init__(self, logLevel='notice'):
         self.cfg = Namespace()
-        self.cfg.apiUrl = 'https://access.redhat.com/labs/securitydataapi'
+        self.cfg.apiUrl = 'https://access.redhat.com/hydra/rest/securitydata'
         logger.setLevel(logLevel.upper())
 
     def _get_terminal_width(self):
